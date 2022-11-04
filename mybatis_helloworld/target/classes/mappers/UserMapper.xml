@@ -30,6 +30,6 @@ mapper接口和映射文件要保证两个一致
     </select>
 <!--    <User> getAllUser();-->
     <select id="getAllUser" resultType="com.atguigu.mybatis.pojo.User">
-select * from t_user
+select * from t_user 
     </select>
 </mapper>
