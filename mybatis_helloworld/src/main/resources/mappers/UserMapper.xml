@@ -13,5 +13,23 @@ mapper接口和映射文件要保证两个一致
     <insert id="insertUser">
         insert into t_user values(null,'admin','123456',23,'男','12345@qq.com')
     </insert>
+<!--void updateUser();-->
+    <update id="updateUser">
+        update t_user set username='root',password='123' where id=3
+    </update>
+<!-- void deleteUser();   -->
+    <delete id="deleteUser">
+    delete from t_user where id=3
+</delete>
 
+<!--  User getUserById();-->
+<!--   resultType:设置结果类型，即查询的数据要转化为的Java类型
+       resultMap:自定义映射，处理多对一或一对多的映射关系-->
+    <select id="getUserById" resultType="com.atguigu.mybatis.pojo.User">
+        select * from t_user where id =1
+    </select>
+<!--    <User> getAllUser();-->
+    <select id="getAllUser" resultType="com.atguigu.mybatis.pojo.User">
+select * from t_user where id=
+    </select>
 </mapper>

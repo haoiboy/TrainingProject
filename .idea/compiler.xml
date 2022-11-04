@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="mybatis_helloworld" target="1.5" />
+      <module name="mybatis_helloworld" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
