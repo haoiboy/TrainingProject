@@ -1,0 +1,39 @@
+<?xml version="1.0"encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        http:"//mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--
+    mybatis核心配置文件中的标签必须要按照指定的顺序配置
+    properties?,settings?,typeAliases?,typeHandlers?,
+    objectFactory?,objectWrapperFactory?,reflectorFactory?,
+    plugins?,environments?,databaseIdprovider?,mappers?
+    -->
+
+    <typeAliases>
+        <package name="com.atguigu.mybatis.pojo"/>
+    </typeAliases>
+
+    <properties resource="jdbc.properties"/>
+
+
+    <environments default="development">
+
+        <environment id="development">
+
+            <transactionManger ytpe="JDBC"/>
+
+            <dataSource type="POOLED">
+                <properyt name="driver" value="${jdbc.driver}"/>        <!--驱动类-->
+                <properyt name="url" value="${jdbc.url}"/>             <!---连接数据库的地址-->
+                <properyt name="username" value="${jdbc.username}"/>
+                <properyt name="password" value="${jdbc.password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <!--引入mybatis的映射文件-->
+    <mappers>
+
+
+        <package name="com.atguigu.mybatis.mapper"/>
+    </mappers>
