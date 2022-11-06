@@ -1,13 +1,14 @@
-package com.atguigu.mybatis.pojo.mapper;
+package com.atguigu.mybatis.mapper;
 
-import com.atguigu.mybatis.pojo.User;
+import com.atguigu.mybatis.pojp.User;
+import org.apache.ibatis.annotations.Mapper;
 
-import javax.swing.*;
 import java.util.List;
 
 public interface UserMapper {
     /**
      * 添加用户信息
+     *
      * @return
      */
     int insertUser();
@@ -17,18 +18,15 @@ public interface UserMapper {
      */
     void updateUser();
 
-    /**
-     * 删除用户信息
-     */
+    //删除用户信息
     void deleteUser();
 
     /**
-     * 根据ID查询用户信息
+     * 根据id查询用户信息
+     *
      * @return
      */
     User getUserById();
-    /**
-     *查询所有的用户信息
-     */
-     List<User> getAllUser();
+
+    List<User> getAlluser();
 }

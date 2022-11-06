@@ -1,24 +1,22 @@
-package com.atguigu.mybatis.pojo;
-
-import org.omg.CORBA.PRIVATE_MEMBER;
+package com.atguigu.mybatis.pojp;
 
 public class User {
     private Integer id;
     private String username;
-        private String password;
+    private String password;
     private Integer age;
-        private String danger;
+    private String gender;
     private String email;
 
     public User() {
     }
 
-    public User(Integer id, String username, String password, Integer age, String danger, String email) {
+    public User(Integer id, String username, String password, Integer age, String gender, String email) {
         this.id = id;
         this.username = username;
         this.password = password;
         this.age = age;
-        this.danger = danger;
+        this.gender = gender;
         this.email = email;
     }
 
@@ -54,12 +52,12 @@ public class User {
         this.age = age;
     }
 
-    public String getDanger() {
-        return danger;
+    public String getGender() {
+        return gender;
     }
 
-    public void setDanger(String danger) {
-        this.danger = danger;
+    public void setGender(String gender) {
+        this.gender = gender;
     }
 
     public String getEmail() {
@@ -77,7 +75,7 @@ public class User {
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 ", age=" + age +
-                ", danger='" + danger + '\'' +
+                ", gender='" + gender + '\'' +
                 ", email='" + email + '\'' +
                 '}';
     }
