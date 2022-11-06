@@ -38,7 +38,7 @@ resultMap:自定义映射，处理一对多或多对一的映射关系
 
     </select>
     <!-- List<User> getAlluser();-->
-    <select id="getAlluser" resultType="com.atguigu.mybatis.pojp.User">
+    <select id="getAlluser" resultType="User">
 
                 select * from t_user
 

@@ -7,13 +7,10 @@
     <groupId>com.atguigu.mybatis</groupId>
     <artifactId>mybatis_helloworld</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>mabatis_parameter</module>
-    </modules>
     <!--    <modules>-->
     <!--        <module>mybatis_paramter</module>-->
     <!--    </modules>-->
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
     <dependencies>
         <!--Mybatis核心-->
         <dependency>

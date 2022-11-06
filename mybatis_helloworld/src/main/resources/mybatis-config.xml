@@ -65,27 +65,31 @@
                 <property name="password" value="${jdbc.password}"/>
             </dataSource>
         </environment>
-        <environment id="development">
-    </environments>
-            <environment id="test">
 
-    <transactionManager type="JDBC"/>
-    <dataSource type="POOLED">
-        <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
-        <property name="url" value="jdbc:mysql://localhost:3306/ssm?serverTimezone=UTC"/>
-        <property name="username" value="root"/>
-        <property name="password" value="123456"/>
-    </dataSource>
-</environment>
+
+    <environment id="test">
+
+
+        <transactionManager type="JDBC"/>
+
+        <dataSource type="POOLED">
+            <property name="driver" value="com.mysql.cj.jdbc.Driver"/>        <!--驱动类-->
+            <property name="url" value="jdbc:mysql://localhost:3306/ssm?serverTimezone=UTC"/>             <!---连接数据库的地址-->
+            <property name="username" value="root"/>
+            <property name="password" value="123456"/>
+        </dataSource>
+    </environment>
+
+    </environments>
 
     <!--引入mybatis的映射文件-->
     <mappers>
-        <mapper resource="mappers/UserMapper.xml"/>
+<!--        <mapper resource="mappers/UserMapper.xml"/>-->
         <!--
         以包的方式引入映射文件，但是必须满足两个条件：
         1.mapper接口和映射文件所在的包必须一致
         2.mapper接口的名字和映射文件的名字必须一致
         -->
-        <!--        <package name="com.atguigu.mybatis.mappers"/>-->
+                <package name="com.atguigu.mybatis.mapper"/>
     </mappers>
 </configuration>
