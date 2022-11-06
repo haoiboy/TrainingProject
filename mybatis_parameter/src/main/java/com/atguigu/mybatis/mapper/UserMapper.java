@@ -1,6 +1,7 @@
 package com.atguigu.mybatis.mapper;
 
 import com.atguigu.mybatis.pojo.User;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.Map;
 
@@ -13,7 +14,16 @@ import java.util.Map;
  * 此时Mybatis会将参数放在map集合里，以两种方式存储数据
  * a>以arg0,arg1..为键,以参数值为值
  * b>以param1，param2..为键，以参数为值
- * 因此，只需要#{}和${}访问map集合的键，就可以获取对应的值
+ * 因此，只需要#{}和${}访问map集合的键，就可以获取对应的值，一定要注意${}的单引号问题
+ *3.若mapper接口的方法为map集合类型的参数
+ * 只需要通过#{}和${}访问map集合的键，就可以获取对应的值，一定要注意${}的单引号问题
+ *4.若mapper接口的方法为实体类类型的参数
+ *  只需要通过#{}和${}访问map集合的键，就可以获取对应的值，一定要注意${}的单引号问题
+ *5.可以在mapper接口方法的参数上试着@Param注解
+ *  此时MyBatis会将这些参数放在map中，以两种方式进行存储
+ *  a>以@Param注解的value属性值为键，以参数为值
+ *  b>以Param1，Param2..为键，以参数为值
+ *  只需要通过#{}和${}访问map集合的键，就可以获取对应的值，一定要注意${}的单引号问题
  */
 public interface UserMapper {
     /**
@@ -37,4 +47,18 @@ public interface UserMapper {
      * @return
      */
     User checkLoginByMap(Map<String,Object>map);
+    /**
+     * 添加用户信息
+     *  @param user
+     *  @return
+     */
+    void insertUser(User user);
+
+    /**
+     * 验证登录(@Param)
+     * @param username
+     * @param passwprd
+     * @return
+     */
+    User checkLoginByparam(@Param("username")String username, @Param("password")String passwprd);
 }

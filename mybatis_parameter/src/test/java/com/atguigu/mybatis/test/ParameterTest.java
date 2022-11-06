@@ -35,6 +35,18 @@ public class ParameterTest {
         map.put("passwprd","123456");
         User  user=mapper.checkLoginByMap(map);
         System.out.println(user);
-
     }
-}
+        @Test
+        public void testInterUser(){
+        SqlSession sqlSession= SqlSessionUtil.getSqlsession();
+            UserMapper mapper=sqlSession.getMapper(UserMapper.class);
+            User user=new User(null,"root","123456",33,"女","123@qq.com");
+         mapper.insertUser(user);
+    }
+    @Test
+    public void testcheckLoginByParam() {
+        SqlSession sqlSession = SqlSessionUtil.getSqlsession();
+        UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+        User user = mapper.checkLoginByparam("admin", "123456");
+        System.out.println(user);
+    }}
