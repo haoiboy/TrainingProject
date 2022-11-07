@@ -49,4 +49,6 @@ public class ParameterTest {
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
         User user = mapper.checkLoginByparam("admin", "123456");
         System.out.println(user);
-    }}
+    }
+
+}

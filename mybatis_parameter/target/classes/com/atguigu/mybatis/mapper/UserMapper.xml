@@ -25,4 +25,6 @@ insert  into t_user values (null,#{username},#{password},#{age},#{danger},#{emai
     <select id="checkLoginByparam" resultType="User">
         select * from t_user where username=#{username} and password=#{password}
     </select>
+<!--     List<User>getAllUser();-->
+
 </mapper> 
