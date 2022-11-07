@@ -11,7 +11,7 @@
     -->
 
     <typeAliases>
-        <package name=""/>
+        <package name="com.atguigu.mybatis.pojo"/>
     </typeAliases>
 
     <properties resource="jdbc.properties"/>
@@ -35,5 +35,5 @@
     <mappers>
 
 
-        <package name=""/>
+        <package name="com.atguigu.mybatis.mapper"/>
     </mappers>
