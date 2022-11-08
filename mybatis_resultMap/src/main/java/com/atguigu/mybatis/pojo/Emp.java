@@ -7,6 +7,7 @@ public class Emp {
     private String empName;
     private Integer age;
     private String gender;
+    private Dept dept;
 
     public Emp(Integer empId, String empName, Integer age, String gender) {
         this.empId = empId;
@@ -47,7 +48,8 @@ public class Emp {
         this.gender = gender;
     }
 
-    public Emp() {
+    public Dept getDept() {
+        return dept;
     }
 
     @Override
@@ -57,6 +59,15 @@ public class Emp {
                 ", empName='" + empName + '\'' +
                 ", age=" + age +
                 ", gender='" + gender + '\'' +
+                ", dept=" + dept +
                 '}';
     }
+
+    public void setDept(Dept dept) {
+        this.dept = dept;
+    }
+
+    public Emp() {
+    }
+
 }

@@ -6,6 +6,7 @@
 <!--    Emp getEmpByeMpId(@Param("empId")Integer empId);
 -->
     <select id="getEmpByeEmpId" resultType="Emp">
-        select * from t_emp WHERE emp_id=#{empId};
+        select emp_id empId,emp_name empName,age,gender  from t_emp WHERE emp_id=#{empId};
     </select>
+<!--    -->
 </mapper> 
