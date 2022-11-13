@@ -9,6 +9,13 @@
     objectFactory?,objectWrapperFactory?,reflectorFactory?,
     plugins?,environments?,databaseIdprovider?,mappers?
     -->
+<settings>
+<!--    将下划线映射为驼峰-->
+<!--    开启延迟加载-->
+    <setting name="lazyLoadingEnabled" value="true"/>
+    <setting name="mapUnderscoreToCamelCase" value="true"/>
+</settings>
+
 
     <typeAliases>
         <package name="com.atguigu.mybatis.pojo"/>
