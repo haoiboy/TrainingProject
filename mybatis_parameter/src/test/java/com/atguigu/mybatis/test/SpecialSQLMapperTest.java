@@ -37,7 +37,7 @@ public class SpecialSQLMapperTest {
 
     }
 
-    public void testJDBC() {
+    public void testJDBC() throws ClassNotFoundException {
         try {
             Class.forName("");
             Connection connection = DriverManager.getConnection("", "", "");
@@ -48,6 +48,8 @@ public class SpecialSQLMapperTest {
             resultSet.next();
             int id = resultSet.getInt(1);
 
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
     }
     @Test
