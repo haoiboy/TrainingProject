@@ -4,21 +4,9 @@ public class Class06 {
     }
 
     public static void main(String[] args) {
-int max=getMax(10,20);
 int max1=getMax(50,60);
 int max2=getMax(160,240);
-        System.out.println("max:"+max);
         System.out.println("max1:"+max1);
         System.out.println("max2:"+max2);
-
-
-
-
-
-
-
-
-
-
     }
 }
