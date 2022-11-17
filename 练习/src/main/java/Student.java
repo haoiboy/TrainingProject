@@ -8,4 +8,5 @@ public class Student {
     public void work(){
         System.out.println("开始使用键盘敲代码....");
     }
+
 }
