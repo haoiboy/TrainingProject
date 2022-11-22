@@ -1,4 +1,4 @@
-package Class1121;
+package Class05;
 
 public class AnimalParent01 {
     public void eat(){

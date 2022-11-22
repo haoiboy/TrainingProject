@@ -1,4 +1,4 @@
-package Class1121;
+package Class05;
 
 public final class Parent {
     private final int age=22;//成员属性变量 不用写初始化值 默认值时0

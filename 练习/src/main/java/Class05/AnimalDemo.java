@@ -1,4 +1,4 @@
-package Class1121;
+package Class05;
 
 public class AnimalDemo {
     public static void main(String[] args) {
