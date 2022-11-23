@@ -1,0 +1,5 @@
+package Class14;
+
+public abstract class AnimalParent {
+    public abstract void eat();
+}
