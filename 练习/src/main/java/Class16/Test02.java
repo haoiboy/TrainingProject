@@ -9,5 +9,6 @@ public class Test02 {
                 System.out.println("我们使用匿名内部类 调用抽象方法mayiktC");
             }
         };
+        mayiktC.mayiktC();
     }
 }
