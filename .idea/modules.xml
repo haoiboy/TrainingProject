@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/IO流/IO流.iml" filepath="$PROJECT_DIR$/IO流/IO流.iml" />
       <module fileurl="file://$PROJECT_DIR$/TrainingProject.iml" filepath="$PROJECT_DIR$/TrainingProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/mybatis_helloworld/mybatis_helloworld.iml" filepath="$PROJECT_DIR$/mybatis_helloworld/mybatis_helloworld.iml" />
       <module fileurl="file://$PROJECT_DIR$/mybatis_parameter/mybatis_parameter.iml" filepath="$PROJECT_DIR$/mybatis_parameter/mybatis_parameter.iml" />

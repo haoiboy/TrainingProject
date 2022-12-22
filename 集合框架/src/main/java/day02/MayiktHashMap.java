@@ -5,8 +5,8 @@ public class MayiktHashMap<K ,V> {
     class Entry<K,V> {
         K k;
         V v;
-int hash;
-
+        int hash;
+Entry<K,V> next;
         public Entry(K k, V v) {
             this.k = k;
             this.v = v;
@@ -18,7 +18,13 @@ int hash;
          * 在我们的数组对应的index位置
          */
         int index=k.hashCode()%entrys.length;
-        entrys[index]=new Entry<>(k,v);
+       Entry oldEntry=entrys[index];
+       if (oldEntry==null){
+           entrys[index]=new Entry<> (k,v);
+       }else {
+oldEntry.next=new Entry<>(k,v);
+       }
+
     }
     public V get(K k){
         /**
@@ -30,7 +36,8 @@ int hash;
 
     public static void main(String[] args) {
         MayiktHashMap<Object, Object> hashMap = new MayiktHashMap<>();
-        hashMap.put("a","a1111111");
+        hashMap.put("a","a");
+        hashMap.put(97,"97");
         System.out.println(hashMap.get("a"));
     }
 }
