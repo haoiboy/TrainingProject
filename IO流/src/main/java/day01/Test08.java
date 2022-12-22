@@ -5,17 +5,18 @@ import java.lang.reflect.Field;
 
 public class Test08 {
     public static void main(String[] args) {
-        File file=new File("D:\\mayikt\\day03");
+        File file=new File("D:\\mayikt\\day02");
         if (file.isDirectory()){
             System.out.println("删除路径是一个文件夹目录");
             deletes(file);
         }
         if (file.isFile()){
-
-delete(file);}}
+            delete(file);
+        }
+    }
     public static void deletes(File file){
         File[] files=file.listFiles();
-       if(Filef:files){
+       for(File f :files){
             file.delete();
             System.out.println("删除文件"+f.getAbsolutePath());
         }
