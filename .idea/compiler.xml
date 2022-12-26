@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="IO流" />
+        <module name="多线程" />
         <module name="mybatis_parameter" />
         <module name="练习" />
         <module name="mybatis_resultMap" />
@@ -21,6 +22,7 @@
       <module name="mybatis_parameter" target="8" />
       <module name="mybatis_resultMap" target="8" />
       <module name="mybatis_tomorrow" target="8" />
+      <module name="多线程" target="1.5" />
       <module name="推箱子" target="1.5" />
       <module name="练习" target="1.5" />
       <module name="集合框架" target="8" />

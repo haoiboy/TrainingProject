@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/mybatis_helloworld/mybatis_helloworld.iml" filepath="$PROJECT_DIR$/mybatis_helloworld/mybatis_helloworld.iml" />
       <module fileurl="file://$PROJECT_DIR$/mybatis_parameter/mybatis_parameter.iml" filepath="$PROJECT_DIR$/mybatis_parameter/mybatis_parameter.iml" />
       <module fileurl="file://$PROJECT_DIR$/mybatis_resultMap/mybatis_resultMap.iml" filepath="$PROJECT_DIR$/mybatis_resultMap/mybatis_resultMap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/多线程/多线程.iml" filepath="$PROJECT_DIR$/多线程/多线程.iml" />
       <module fileurl="file://$PROJECT_DIR$/练习/练习.iml" filepath="$PROJECT_DIR$/练习/练习.iml" />
       <module fileurl="file://$PROJECT_DIR$/集合框架/集合框架.iml" filepath="$PROJECT_DIR$/集合框架/集合框架.iml" />
     </modules>
