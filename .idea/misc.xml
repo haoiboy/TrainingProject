@@ -11,10 +11,14 @@
         <option value="$PROJECT_DIR$/集合框架/pom.xml" />
         <option value="$PROJECT_DIR$/IO流/pom.xml" />
         <option value="$PROJECT_DIR$/多线程/pom.xml" />
+        <option value="$PROJECT_DIR$/socket-网络编程/pom.xml" />
+        <option value="$PROJECT_DIR$/反射技术/pom.xml" />
+        <option value="$PROJECT_DIR$/juc并发编程基础/pom.xml" />
+        <option value="$PROJECT_DIR$/jdk8新特性 lambda与stream/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8.0_321" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
