@@ -15,6 +15,7 @@
         <option value="$PROJECT_DIR$/反射技术/pom.xml" />
         <option value="$PROJECT_DIR$/juc并发编程基础/pom.xml" />
         <option value="$PROJECT_DIR$/jdk8新特性 lambda与stream/pom.xml" />
+        <option value="$PROJECT_DIR$/Lambda表达式/pom.xml" />
       </list>
     </option>
   </component>
